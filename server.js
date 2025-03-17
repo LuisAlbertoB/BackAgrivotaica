@@ -21,7 +21,7 @@ app.use(express.json());
 app.use('/auth', authRoutes);
 app.use('/cultivos', cultivosRoutes);
 app.use('/parcelas', parcelasRoutes);
-app.use('/sensores_data', sensor_dataRoutes);
+app.use('/api', sensor_dataRoutes);
 
 // Iniciar servidor
 const PORT = process.env.PORT || 3000;
